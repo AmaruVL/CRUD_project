@@ -19,6 +19,7 @@
 - **Vargas Quispe Charly** - GitHub Account - [chavaqui](https://github.com/chavaqui)
 - **Pérez Tomaylla Bruno** - GitHub Account - [Bruno130322](https://github.com/Bruno130322)
 - **Peña Luque Raisa Melina** - GitHub Account - [Raisa18](https://github.com/Raisa18)
+- **Salas Ccolqque Willian** - GitHub Account - [willian-174450](https://github.com/willian-174450)
 ---
 ## Empezamos... 🚀
 
