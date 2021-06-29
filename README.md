@@ -16,6 +16,7 @@
 
 - **Villasante Leon Amaru** - GitHub Account - [AmaruVL](https://github.com/AmaruVL)
 - **Jhon Albert Ccuito Quispe** - GitHub Account - [jhonjacc](https://github.com/jhonjacc)
+- **Vargas Quispe Charly** - GitHub Account - [chavaqui](https://github.com/chavaqui)
 ---
 ## Empezamos... 🚀
 
