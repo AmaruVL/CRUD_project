@@ -18,7 +18,7 @@
 - **Puma Sotomayor Richard Mihaylov** - GitHub Account - [Richard3971](https://github.com/Richard3971)
 - **Lazo Mendoza Jeremy Axl** - GitHub Account - [Jeremylazm](https://github.com/Jeremylazm)
 - **Marko Leugim Cordova Castro** - GitHub Account - [MarkoD99](https://github.com/MarkoD99)
-- **Jhon Albert Ccuito Quispe** - GitHub Account - [jhonjacc](https://github.com/jhonjacc)
+- 
 - **Yeni Ruth Porroa Sivana** - GitHub Account - [porroayeni](https://github.com/porroayeni)
 - **Leonardo Chepper Pumacahua Apaza** - GitHub Account - [ChepperK0](https://github.com/ChepperK0)
 ---
