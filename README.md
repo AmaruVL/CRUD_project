@@ -21,7 +21,7 @@
 - **Peña Luque Raisa Melina** - GitHub Account - [Raisa18](https://github.com/Raisa18)
 - **Benjamin Alexander Hualverde Quispe** - GitHub Account - [Benjamin-Gthub](https://github.com/Benjamin-Gthub)
 - **Salas Ccolqque Willian** - GitHub Account - [willian-174450](https://github.com/willian-174450)
-- **Maxdeo Lagos Kevin Rousbel ** - Cuenta de Hithub -[maxdeo07] https://github.com/maxdeo07
+- **Maxdeo Lagos Kevin Rousbel ** - GitHub Account -[maxdeo07] (https://github.com/maxdeo07)
 ## Empezamos... 🚀
 
 
