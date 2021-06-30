@@ -15,7 +15,7 @@
 #### Autores:✒️
 
 - **Villasante Leon Amaru** - GitHub Account - [AmaruVL](https://github.com/AmaruVL)
-- **Jhon Albert Ccuito Quispe** - GitHub Account - [jhonjacc](https://github.com/jhonjacc)
+- **Ccuito Quispe Jhon Albert** - GitHub Account - [jhonjacc](https://github.com/jhonjacc)
 - **Vargas Quispe Charly** - GitHub Account - [chavaqui](https://github.com/chavaqui)
 - **Pérez Tomaylla Bruno** - GitHub Account - [Bruno130322](https://github.com/Bruno130322)
 - **Peña Luque Raisa Melina** - GitHub Account - [Raisa18](https://github.com/Raisa18)
