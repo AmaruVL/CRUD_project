@@ -1,0 +1,6 @@
+C:\Users\Usuario\source\repos\CORRECCION\LibClases\bin\Debug\LibClases.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibClases\bin\Debug\LibClases.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibClases\obj\Debug\LibClases.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\CORRECCION\LibClases\obj\Debug\LibClases.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibClases\obj\Debug\LibClases.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibClases\obj\Debug\LibClases.csprojAssemblyReference.cache

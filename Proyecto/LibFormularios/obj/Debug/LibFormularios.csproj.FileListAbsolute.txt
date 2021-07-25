@@ -1,0 +1,13 @@
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\bin\Debug\LibFormularios.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\bin\Debug\LibFormularios.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\bin\Debug\LibClases.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\bin\Debug\LibClases.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.FrmDocente.resources
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.FrmPadre.resources
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.csproj.CopyComplete
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibFormularios\obj\Debug\LibFormularios.FrmEscuelaProfesional.resources

@@ -1,0 +1,16 @@
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\LibLogeo.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\LibLogeo.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.Logeo.resources
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.Properties.Resources.resources
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.csproj.CopyComplete
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\obj\Debug\LibLogeo.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\LibClases.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\LibFormularios.dll
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\LibClases.pdb
+C:\Users\Usuario\source\repos\CORRECCION\LibLogeo\bin\Debug\LibFormularios.pdb
