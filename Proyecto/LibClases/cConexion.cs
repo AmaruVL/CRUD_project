@@ -19,7 +19,7 @@ namespace LibClases
             aDatos = new DataSet();
             aAdaptador = new SqlDataAdapter();
             // realizar la conexion
-            string CadenaConexion = "Data Source = DESKTOP-CRR1BUE; Initial Catalog= BDSistema_Tutoria; Integrated Security=SSPI;";
+            string CadenaConexion = "Data Source=.;Initial Catalog=BDTutoria;Integrated Security=True";
             aConexion = new SqlConnection(CadenaConexion);
         }
         //-------------Propiedades---------------
