@@ -1,7 +1,7 @@
 ﻿
-namespace AsignacionWF
+namespace LibFormularios
 {
-    partial class Form1
+    partial class FrmAsignacion
     {
         /// <summary>
         /// Required designer variable.
@@ -204,7 +204,7 @@ namespace AsignacionWF
             this.btnPasar2.TabIndex = 3;
             this.btnPasar2.Text = "-->";
             this.btnPasar2.UseVisualStyleBackColor = true;
-            this.btnPasar2.Click += new System.EventHandler(this.btnPasar2_Click);
+            //this.btnPasar2.Click += new System.EventHandler(this.btnPasar2_Click);
             // 
             // Form1
             // 

@@ -147,7 +147,6 @@ namespace LibFormularios
         {
             Grabar();
         }
-
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             Eliminar();
