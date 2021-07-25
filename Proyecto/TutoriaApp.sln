@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoriaApp", "CORRECCION\TutoriaApp.csproj", "{FE1C61AC-37C4-45E6-941E-E27B66EDE417}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoriaApp", "TutoriaApp\TutoriaApp.csproj", "{FE1C61AC-37C4-45E6-941E-E27B66EDE417}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibClases", "LibClases\LibClases.csproj", "{6F18AB72-CBBE-4E53-A660-5E4387E48742}"
 EndProject
