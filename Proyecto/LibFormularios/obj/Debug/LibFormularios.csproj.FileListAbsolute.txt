@@ -24,3 +24,5 @@ E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormul
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.csproj.CopyComplete
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.dll
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.pdb
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmAsignacion.resources
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmEstudiante.resources

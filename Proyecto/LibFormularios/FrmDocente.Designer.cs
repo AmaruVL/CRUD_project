@@ -219,7 +219,7 @@
             // 
             this.DgvDocente.AllowUserToDeleteRows = false;
             this.DgvDocente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvDocente.Location = new System.Drawing.Point(35, 202);
+            this.DgvDocente.Location = new System.Drawing.Point(31, 187);
             this.DgvDocente.Name = "DgvDocente";
             this.DgvDocente.ReadOnly = true;
             this.DgvDocente.Size = new System.Drawing.Size(639, 159);

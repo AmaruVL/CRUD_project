@@ -47,7 +47,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(709, 49);
+            this.panel1.Size = new System.Drawing.Size(788, 49);
             this.panel1.TabIndex = 3;
             // 
             // LblTitulo
@@ -57,7 +57,7 @@
             this.LblTitulo.ForeColor = System.Drawing.Color.White;
             this.LblTitulo.Location = new System.Drawing.Point(0, 0);
             this.LblTitulo.Name = "LblTitulo";
-            this.LblTitulo.Size = new System.Drawing.Size(709, 49);
+            this.LblTitulo.Size = new System.Drawing.Size(788, 49);
             this.LblTitulo.TabIndex = 0;
             this.LblTitulo.Text = "Titulo";
             this.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,9 +69,9 @@
             this.panel3.Controls.Add(this.BtnNuevo);
             this.panel3.Controls.Add(this.BtnSalir);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 418);
+            this.panel3.Location = new System.Drawing.Point(0, 437);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(709, 44);
+            this.panel3.Size = new System.Drawing.Size(788, 44);
             this.panel3.TabIndex = 18;
             // 
             // BtnEliminar
@@ -79,7 +79,7 @@
             this.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BtnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminar.Location = new System.Drawing.Point(363, 0);
+            this.BtnEliminar.Location = new System.Drawing.Point(403, 7);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(155, 28);
             this.BtnEliminar.TabIndex = 16;
@@ -92,7 +92,7 @@
             this.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BtnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.Location = new System.Drawing.Point(191, 0);
+            this.BtnGuardar.Location = new System.Drawing.Point(211, 7);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(155, 28);
             this.BtnGuardar.TabIndex = 15;
@@ -105,7 +105,7 @@
             this.BtnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BtnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNuevo.ForeColor = System.Drawing.Color.White;
-            this.BtnNuevo.Location = new System.Drawing.Point(19, 0);
+            this.BtnNuevo.Location = new System.Drawing.Point(19, 7);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(155, 28);
             this.BtnNuevo.TabIndex = 14;
@@ -118,7 +118,7 @@
             this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.Color.White;
-            this.BtnSalir.Location = new System.Drawing.Point(535, 0);
+            this.BtnSalir.Location = new System.Drawing.Point(600, 7);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(155, 28);
             this.BtnSalir.TabIndex = 1;
@@ -131,7 +131,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 49);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(709, 369);
+            this.panel2.Size = new System.Drawing.Size(788, 388);
             this.panel2.TabIndex = 19;
             // 
             // FrmPadre
@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(709, 462);
+            this.ClientSize = new System.Drawing.Size(788, 481);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
