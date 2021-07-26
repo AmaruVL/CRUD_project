@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace LibClases
 {
-    public class cDocente : cEntidad
-    {   //==============ATRIBUTOS================
+    public class cEstudiante :cEntidad
+    {
+        //==============ATRIBUTOS================
         //---   Todos heredados de cEntidad   ---
 
         //===============METODOS=================
         //-----------Constructores---------------
-        public cDocente() : base("Docente")
+        public cEstudiante() : base("Estudiante")
         {
         }
         //--Implementacion de metodos abstractos
         public override string[] NombresAtributos()
         {
-            return new string[] {"CodDocente","Nombres", "ApellidoPaterno","ApellidoMaterno","Clase",
-                "Categoria","Regimen","CarreraProfesional"};
+            return new string[] {"CodEstudiante","Nombres","ApellidoPaterno","ApellidoMaterno","CarreraProfesional","Condicion"};
         }
-
     }
 }

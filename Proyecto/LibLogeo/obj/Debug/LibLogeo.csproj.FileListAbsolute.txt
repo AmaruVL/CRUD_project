@@ -29,3 +29,6 @@ E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.CopyComplete
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.dll
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.pdb
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.Licensing.dll
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
