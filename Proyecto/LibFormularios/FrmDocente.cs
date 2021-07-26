@@ -168,7 +168,7 @@ namespace LibFormularios
         }
 
         #endregion
-
+        //public void Tutor();
         private void btnFiltrarEst_Click(object sender, EventArgs e)
         {
             FrmFiltroDocentes Filtro = new FrmFiltroDocentes();
@@ -176,5 +176,6 @@ namespace LibFormularios
             Filtro.Show();
 
         }
+        
     }
 }

@@ -48,12 +48,12 @@ namespace LibFormularios
             this.btnFiltrarEst = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiante)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnFiltrarEst);
             this.panel2.Controls.Add(this.cbCondicion);
             this.panel2.Controls.Add(this.dgvEstudiante);
             this.panel2.Controls.Add(this.lblNombres);
@@ -80,8 +80,10 @@ namespace LibFormularios
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnFiltrarEst);
             this.panel3.Location = new System.Drawing.Point(0, 422);
             this.panel3.Size = new System.Drawing.Size(801, 44);
+            this.panel3.Controls.SetChildIndex(this.btnFiltrarEst, 0);
             // 
             // tbCodigo
             // 
@@ -221,9 +223,10 @@ namespace LibFormularios
             // btnFiltrarEst
             // 
             this.btnFiltrarEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnFiltrarEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarEst.ForeColor = System.Drawing.Color.White;
-            this.btnFiltrarEst.Location = new System.Drawing.Point(95, 320);
+            this.btnFiltrarEst.Location = new System.Drawing.Point(557, 6);
             this.btnFiltrarEst.Name = "btnFiltrarEst";
             this.btnFiltrarEst.Size = new System.Drawing.Size(105, 28);
             this.btnFiltrarEst.TabIndex = 17;
@@ -242,6 +245,7 @@ namespace LibFormularios
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiante)).EndInit();
             this.ResumeLayout(false);
 

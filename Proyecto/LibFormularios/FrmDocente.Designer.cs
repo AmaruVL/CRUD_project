@@ -55,12 +55,12 @@
             this.btnFiltrarEst = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDocente)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnFiltrarEst);
             this.panel2.Controls.Add(this.DgvDocente);
             this.panel2.Controls.Add(this.tbCodigo);
             this.panel2.Controls.Add(this.label2);
@@ -91,8 +91,10 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnFiltrarEst);
             this.panel3.Location = new System.Drawing.Point(0, 418);
             this.panel3.Size = new System.Drawing.Size(879, 44);
+            this.panel3.Controls.SetChildIndex(this.btnFiltrarEst, 0);
             // 
             // BtnEliminar
             // 
@@ -307,9 +309,10 @@
             // btnFiltrarEst
             // 
             this.btnFiltrarEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnFiltrarEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarEst.ForeColor = System.Drawing.Color.White;
-            this.btnFiltrarEst.Location = new System.Drawing.Point(70, 312);
+            this.btnFiltrarEst.Location = new System.Drawing.Point(556, 7);
             this.btnFiltrarEst.Name = "btnFiltrarEst";
             this.btnFiltrarEst.Size = new System.Drawing.Size(105, 28);
             this.btnFiltrarEst.TabIndex = 77;
@@ -329,6 +332,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvDocente)).EndInit();
             this.ResumeLayout(false);
 

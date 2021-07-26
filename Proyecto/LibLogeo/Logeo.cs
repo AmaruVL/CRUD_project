@@ -72,5 +72,18 @@ namespace LibLogeo
             Menu.Show();
             //Hide();
         }
+
+        public static string CifradoMD5(string Contraseña) //Método de clase
+        {
+            //Guardar contraseña en bytes en un arreglo
+            byte[] ContraseñaBytes = new UTF8Encoding().GetBytes(Contraseña);
+            //Aplicar MD5 para generar hash
+            byte[] Hash = System.Security.Cryptography.MD5.Create().ComputeHash(ContraseñaBytes);
+            //Representación en string
+            string ContraseñaCifrada = BitConverter.ToString(Hash)
+               .Replace("-", "") //Sin guiones
+               .ToLower(); //En minusculas
+            return ContraseñaCifrada;
+        }
     }
 }

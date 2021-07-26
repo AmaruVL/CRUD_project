@@ -64,7 +64,7 @@ create table Tutor(
 	EscuelaProfesional varchar(4) not null,
 	CantidadEstudiantes int,
 	PRIMARY KEY (CodDocente),
-	--foreign key(CodDocente)references Docente(CodDocente)
+	foreign key(CodDocente)references Docente(CodDocente)
 )
 go
 

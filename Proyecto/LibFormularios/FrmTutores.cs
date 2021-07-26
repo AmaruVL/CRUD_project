@@ -21,9 +21,14 @@ namespace LibFormularios
         private void FrmTutores_Load(object sender, EventArgs e)
         {
             cEntidad Docente = new cDocente();
-            dgvTutores.DataSource = Docente.ListaGeneral();
-            //string Codigo = @"select * from Docente where
-            //    (Clase = 'Nombrado') or (Clase = 'Contratado' and (Regimen = 'A1' or Regimen = 'B1'))";
+            //dgvTutores.DataSource = Docente.ListaGeneral();
+            dgvTutores.DataSource = Docente.ListaTutor();
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

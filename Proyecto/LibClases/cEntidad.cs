@@ -175,7 +175,16 @@ namespace LibClases
         public DataTable ListaGeneral()
         {   //retorna una tabla con la lista completa de libros 
             string Consulta = "select * from " + aNombreTabla;
+
             aConexion.EjecutarSelect(Consulta);
+            return aConexion.Datos.Tables[0];
+        }
+        public DataTable ListaTutor()
+        {
+            
+            string Codigo = @"select * from Docente where
+                (Clase = 'Nombrado') or (Clase = 'Contratado' and (Regimen = 'A1' or Regimen = 'B1'))";
+            aConexion.EjecutarSelect(Codigo);
             return aConexion.Datos.Tables[0];
         }
     }
