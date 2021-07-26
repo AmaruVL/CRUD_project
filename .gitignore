@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.sqlite
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -268,8 +269,6 @@ ServiceFabricBackup/
 *.mdf
 *.ldf
 *.ndf
-*.suo
-*.cache
 
 # Business Intelligence projects
 *.rdl.data

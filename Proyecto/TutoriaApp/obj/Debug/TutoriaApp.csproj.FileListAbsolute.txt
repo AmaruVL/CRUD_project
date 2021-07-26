@@ -16,3 +16,6 @@ E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\TutoriaAp
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\TutoriaApp\obj\Debug\TutoriaApp.csproj.CopyComplete
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\TutoriaApp\obj\Debug\CORRECCION.exe
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\TutoriaApp\obj\Debug\CORRECCION.pdb
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\TutoriaApp\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\TutoriaApp\bin\Debug\Bunifu.Licensing.dll
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\TutoriaApp\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml

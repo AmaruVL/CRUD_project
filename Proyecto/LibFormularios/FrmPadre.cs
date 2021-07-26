@@ -136,16 +136,37 @@ namespace LibFormularios
                 MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
             }
         }
+        public virtual void Editar()
+        {
+            try
+            {
+                if (EsRegistroValido())
+                {   //--Recuperar atributos, el primer atributo es la clave
+                    string[] Atributos = AsignarValoresAtributos();
+                    //-- Verificar si existe clave primaria
+                    if (aEntidad.ExisteClavePrimaria(Atributos))
+                    {
+                        aEntidad.Actualizar(Atributos);
+                        MessageBox.Show("ACTUALIZADO EXITOSAMENTE", "CONFIRMACION");
+                    }
+                    else
+                        MessageBox.Show("NO EXISTE EN EL REGISTRO", "CONFIRMACION");
+                    InicializarAtributos();
+                    ListarRegistros();
+                }
+                else
+                    MessageBox.Show("DEBE COMPLETAR EL LLENADO DEL FORMULARIO", "ALERTA");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+            }
+        }
 
         //----------------------------------EVENTOS--------------------------------------
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
             InicializarAtributos();
-        }
-
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-            Grabar();
         }
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
@@ -154,6 +175,15 @@ namespace LibFormularios
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            Editar();
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            Grabar();
         }
     }
 }

@@ -12,14 +12,15 @@ namespace LibClases
 
         //===============METODOS=================
         //-----------Constructores---------------
-        public cDocente() : base("TDocente")
+        public cDocente() : base("Docente")
         {
         }
         //--Implementacion de metodos abstractos
         public override string[] NombresAtributos()
         {
-            return new string[] {"CodDocente","APaterno","AMaterno","Nombre","Identificacion","Telefono",
-                "Departamento","Condicion","Categoria","Regimen","Grado"};
+            return new string[] {"Nombres", "ApellidoPaterno","ApellidoMaterno","Clase",
+                "Categoria","Regimen","CarreraProfesional"};
         }
+
     }
 }
