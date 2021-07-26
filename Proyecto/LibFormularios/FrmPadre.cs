@@ -185,5 +185,10 @@ namespace LibFormularios
         {
             Grabar();
         }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

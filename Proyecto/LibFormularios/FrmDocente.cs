@@ -7,6 +7,7 @@ namespace LibFormularios
     public partial class FrmDocente : FrmPadre
     {
         private string CodDocente = "";
+        private bool EditActivado = false;
         public FrmDocente()
         {
             InitializeComponent();
@@ -79,10 +80,18 @@ namespace LibFormularios
                 if (EsRegistroValido())
                 {   //--Recuperar atributos, el primer atributo es la clave
                     string[] Atributos = AsignarValoresAtributos();
-                    //-- Verificar si existe clave primaria
-                    aEntidad.Insertar(Atributos);
+
+                    if (EditActivado) //Si se presionó el boton editar, entonces actualizar
+                    {
+                        aEntidad.Actualizar(Atributos);
+                        EditActivado = false; //Reestablecer a falso
+                    }
+                    else //Entonces insertar
+                    {
+                        aEntidad.Insertar(Atributos);
+                    }
                     //-- Inicializar el formulario
-                    MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE :D", "CONFIRMACION");
+                    MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE", "CONFIRMACION");
                     InicializarAtributos();
                     ListarRegistros();
                 }
@@ -96,19 +105,19 @@ namespace LibFormularios
         }
         public override void Editar()
         {
-            //base.Editar();
             try
             {
                 if (DgvDocente.SelectedRows.Count > 0)
                 {
-                    CodDocente = DgvDocente.CurrentRow.Cells["Codigo"].Value.ToString();
-                    tbNombre.Text = DgvDocente.CurrentRow.Cells["Nombres"].Value.ToString();
-                    tbAP.Text = DgvDocente.CurrentRow.Cells["AP"].Value.ToString();
-                    tbAM.Text = DgvDocente.CurrentRow.Cells["AM"].Value.ToString();
-                    tbClase.Text = DgvDocente.CurrentRow.Cells["Clase"].Value.ToString();
-                    tbCategoria.Text = DgvDocente.CurrentRow.Cells["Categoria"].Value.ToString();
-                    tbRegimen.Text = DgvDocente.CurrentRow.Cells["Regimen"].Value.ToString();
-                    tbCarrera.Text = DgvDocente.CurrentRow.Cells["Carrera"].Value.ToString();
+                    CodDocente = DgvDocente.CurrentRow.Cells[0].Value.ToString();
+                    tbNombre.Text = DgvDocente.CurrentRow.Cells[1].Value.ToString();
+                    tbAP.Text = DgvDocente.CurrentRow.Cells[2].Value.ToString();
+                    tbAM.Text = DgvDocente.CurrentRow.Cells[3].Value.ToString();
+                    tbClase.Text = DgvDocente.CurrentRow.Cells[4].Value.ToString();
+                    tbCategoria.Text = DgvDocente.CurrentRow.Cells[5].Value.ToString();
+                    tbRegimen.Text = DgvDocente.CurrentRow.Cells[6].Value.ToString();
+                    tbCarrera.Text = DgvDocente.CurrentRow.Cells[7].Value.ToString();
+                    EditActivado = true;
                 }
                 else
                 {
@@ -119,6 +128,41 @@ namespace LibFormularios
             {
                 MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
             }
+        }
+        public override void Eliminar()
+        {
+            try
+            {
+                if (DgvDocente.SelectedRows.Count > 0)
+                {
+                    string Nombre, AP, AM, Clase, Categoria, Regimen, Carrera;
+                    Nombre = DgvDocente.CurrentRow.Cells[1].Value.ToString();
+                    AP = DgvDocente.CurrentRow.Cells[2].Value.ToString();
+                    AM = DgvDocente.CurrentRow.Cells[3].Value.ToString();
+                    Clase = DgvDocente.CurrentRow.Cells[4].Value.ToString();
+                    Categoria = DgvDocente.CurrentRow.Cells[5].Value.ToString();
+                    Regimen = DgvDocente.CurrentRow.Cells[6].Value.ToString();
+                    Carrera = DgvDocente.CurrentRow.Cells[7].Value.ToString();
+
+                    //--Recuperar atributos, el primer atributo es la clave
+                    string[] Atributos = { Nombre , AP , AM , Clase , Categoria , Regimen, Carrera };
+                    //-- Verificar si existe clave primaria
+                    aEntidad.Eliminar(Atributos);
+                    MessageBox.Show("ELIMINADO EXITOSAMENTE", "CONFIRMACION");
+                    InicializarAtributos();
+                    ListarRegistros();
+
+                }
+                else
+                {
+                    MessageBox.Show("SELECCIONE UNA FILA PARA ELIMINAR :/", "ERROR");
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+            }
+
         }
     }
 }
