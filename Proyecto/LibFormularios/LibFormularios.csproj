@@ -170,6 +170,18 @@
     <Compile Include="FrmEscuelaProfesional.Designer.cs">
       <DependentUpon>FrmEscuelaProfesional.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFiltroDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltroDocentes.Designer.cs">
+      <DependentUpon>FrmFiltroDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiltroEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltroEstudiante.Designer.cs">
+      <DependentUpon>FrmFiltroEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPadre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +219,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEstudiante.resx">
       <DependentUpon>FrmEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltroDocentes.resx">
+      <DependentUpon>FrmFiltroDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltroEstudiante.resx">
+      <DependentUpon>FrmFiltroEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPadre.resx">
       <DependentUpon>FrmPadre.cs</DependentUpon>

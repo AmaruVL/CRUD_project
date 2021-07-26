@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Data;
 using LibClases;
 
 namespace LibFormularios
@@ -13,6 +14,7 @@ namespace LibFormularios
             InitializeComponent();
             IniciarEntidad(new cDocente());
         }
+        #region Modulos Override
         //======definicion de los metodos virtuales=======
 
         //--EStablecer los valores que iran a la tabla
@@ -63,7 +65,9 @@ namespace LibFormularios
             else
                 return false;
         }
-        //===============EVENTOS===========================
+        #endregion
+
+        #region Eventos
         private void TbCodigo_Leave(object sender, EventArgs e)
         {
             ProcesarClave();
@@ -72,7 +76,9 @@ namespace LibFormularios
         {
             ListarRegistros();
         }
+        #endregion
 
+        #region Módulos BD
         public override void Grabar()
         {
             try
@@ -164,5 +170,8 @@ namespace LibFormularios
             }
 
         }
+
+        #endregion
+
     }
 }

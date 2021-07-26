@@ -42,7 +42,6 @@ namespace LibClases
         //-- Estos atributos deben concidir con los existentes en la Base de Datos
         //--------------------------------------------------------------------------
         public abstract string[] NombresAtributos();
-
         //------------------------------------------------------------------------
         //-- Metodos para el mantenimiento de la tabla
         //------------------------------------------------------------------------
@@ -138,6 +137,32 @@ namespace LibClases
             aConexion.EjecutarSelect(CadenaConsulta);
             return aConexion.Datos.Tables[0];
         }
+        //public DataTable Filtrar(string NombreTabla, string[] NombresAtributos, string[] ValoresAtributos)
+        public DataTable Filtrar(params string[] Atributos)
+        {
+            DataTable Tabla = new DataTable();
+            aNombres = NombresAtributos();
+            aValores = Atributos;
+
+            //Generar consulta
+            string CodSQL = $"select * from {aNombreTabla} where\n";
+            string Operador;
+            int NroAtr = aNombres.Length;
+            for (int i = 0; i < NroAtr; i++)
+            {
+                Operador = aValores[i] == "" ? "<>" : "=";
+                CodSQL += $"\t{aNombres[i]} {Operador} '{aValores[i]}' ";
+                if (i < NroAtr - 1) CodSQL += "and\n";
+            }
+            aConexion.EjecutarSelect(CodSQL);
+            return aConexion.Datos.Tables[0];
+            //Comando.CommandText = CodSQL;
+            //Lector = Comando.ExecuteReader();
+            //Tabla.Load(Lector);
+            //Lector.Close();
+            //return Tabla;
+        }
+
         //------------------------------------------------------------------------
         public string ValorAtributo(string pNombreCampo)
         {   //-- Recupera el valor de un atributo del dataset 

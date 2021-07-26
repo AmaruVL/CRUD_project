@@ -298,7 +298,6 @@
         private System.Windows.Forms.TextBox tbAM;
         private System.Windows.Forms.TextBox tbAP;
         private System.Windows.Forms.TextBox tbNombre;
-        private System.Windows.Forms.DataGridView DgvDocente;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label5;
@@ -308,5 +307,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbCarrera;
         private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.DataGridView DgvDocente;
     }
 }

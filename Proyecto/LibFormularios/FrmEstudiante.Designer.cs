@@ -29,83 +29,88 @@ namespace LibFormularios
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.tbCodigo = new System.Windows.Forms.TextBox();
+            this.tbNombres = new System.Windows.Forms.TextBox();
+            this.tbAP = new System.Windows.Forms.TextBox();
+            this.tbAM = new System.Windows.Forms.TextBox();
+            this.tbCarrera = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblAP = new System.Windows.Forms.Label();
             this.lblNombres = new System.Windows.Forms.Label();
             this.lblAM = new System.Windows.Forms.Label();
             this.lblCarrera = new System.Windows.Forms.Label();
             this.lblCondicion = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dgvEstudiante = new System.Windows.Forms.DataGridView();
+            this.cbCondicion = new System.Windows.Forms.ComboBox();
+            this.btnFiltrarEst = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiante)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.btnFiltrarEst);
+            this.panel2.Controls.Add(this.cbCondicion);
+            this.panel2.Controls.Add(this.dgvEstudiante);
             this.panel2.Controls.Add(this.lblNombres);
             this.panel2.Controls.Add(this.lblCondicion);
             this.panel2.Controls.Add(this.lblCarrera);
             this.panel2.Controls.Add(this.lblAM);
             this.panel2.Controls.Add(this.lblAP);
             this.panel2.Controls.Add(this.lblCodigo);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Size = new System.Drawing.Size(770, 373);
+            this.panel2.Controls.Add(this.tbCarrera);
+            this.panel2.Controls.Add(this.tbAM);
+            this.panel2.Controls.Add(this.tbAP);
+            this.panel2.Controls.Add(this.tbNombres);
+            this.panel2.Controls.Add(this.tbCodigo);
+            this.panel2.Size = new System.Drawing.Size(801, 373);
             // 
             // panel1
             // 
-            this.panel1.Size = new System.Drawing.Size(770, 49);
+            this.panel1.Size = new System.Drawing.Size(801, 49);
             // 
             // LblTitulo
             // 
-            this.LblTitulo.Size = new System.Drawing.Size(770, 49);
+            this.LblTitulo.Size = new System.Drawing.Size(801, 49);
             // 
-            // textBox1
+            // tbCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.tbCodigo.Location = new System.Drawing.Point(116, 39);
+            this.tbCodigo.Name = "tbCodigo";
+            this.tbCodigo.Size = new System.Drawing.Size(100, 20);
+            this.tbCodigo.TabIndex = 0;
             // 
-            // textBox2
+            // tbNombres
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
+            this.tbNombres.Location = new System.Drawing.Point(116, 65);
+            this.tbNombres.Name = "tbNombres";
+            this.tbNombres.Size = new System.Drawing.Size(100, 20);
+            this.tbNombres.TabIndex = 0;
             // 
-            // textBox3
+            // tbAP
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 0;
+            this.tbAP.Location = new System.Drawing.Point(116, 91);
+            this.tbAP.Name = "tbAP";
+            this.tbAP.Size = new System.Drawing.Size(100, 20);
+            this.tbAP.TabIndex = 0;
             // 
-            // textBox4
+            // tbAM
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 117);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 0;
+            this.tbAM.Location = new System.Drawing.Point(116, 117);
+            this.tbAM.Name = "tbAM";
+            this.tbAM.Size = new System.Drawing.Size(100, 20);
+            this.tbAM.TabIndex = 0;
             // 
-            // textBox5
+            // tbCarrera
             // 
-            this.textBox5.Location = new System.Drawing.Point(116, 143);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 0;
+            this.tbCarrera.Location = new System.Drawing.Point(116, 143);
+            this.tbCarrera.Name = "tbCarrera";
+            this.tbCarrera.Size = new System.Drawing.Size(100, 20);
+            this.tbCarrera.TabIndex = 0;
             // 
             // lblCodigo
             // 
@@ -161,54 +166,93 @@ namespace LibFormularios
             this.lblCondicion.TabIndex = 1;
             this.lblCondicion.Text = "Condición:";
             // 
-            // dataGridView1
+            // dgvEstudiante
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(236, 21);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(508, 324);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvEstudiante.AllowUserToAddRows = false;
+            this.dgvEstudiante.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEstudiante.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvEstudiante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEstudiante.Location = new System.Drawing.Point(245, 17);
+            this.dgvEstudiante.MultiSelect = false;
+            this.dgvEstudiante.Name = "dgvEstudiante";
+            this.dgvEstudiante.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEstudiante.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvEstudiante.RowHeadersWidth = 30;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvEstudiante.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvEstudiante.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEstudiante.Size = new System.Drawing.Size(508, 324);
+            this.dgvEstudiante.TabIndex = 2;
             // 
-            // comboBox1
+            // cbCondicion
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCondicion.FormattingEnabled = true;
+            this.cbCondicion.Items.AddRange(new object[] {
             "Normal",
             "En riesgo"});
-            this.comboBox1.Location = new System.Drawing.Point(116, 172);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cbCondicion.Location = new System.Drawing.Point(116, 172);
+            this.cbCondicion.Name = "cbCondicion";
+            this.cbCondicion.Size = new System.Drawing.Size(100, 21);
+            this.cbCondicion.TabIndex = 3;
+            // 
+            // btnFiltrarEst
+            // 
+            this.btnFiltrarEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnFiltrarEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarEst.ForeColor = System.Drawing.Color.White;
+            this.btnFiltrarEst.Location = new System.Drawing.Point(54, 322);
+            this.btnFiltrarEst.Name = "btnFiltrarEst";
+            this.btnFiltrarEst.Size = new System.Drawing.Size(105, 28);
+            this.btnFiltrarEst.TabIndex = 17;
+            this.btnFiltrarEst.Text = "Filtrar";
+            this.btnFiltrarEst.UseVisualStyleBackColor = false;
+            this.btnFiltrarEst.Click += new System.EventHandler(this.btnFiltrarEst_Click);
             // 
             // FrmEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 466);
+            this.ClientSize = new System.Drawing.Size(801, 466);
             this.Name = "FrmEstudiante";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmEstudiante_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiante)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCarrera;
+        private System.Windows.Forms.TextBox tbAM;
+        private System.Windows.Forms.TextBox tbAP;
+        private System.Windows.Forms.TextBox tbNombres;
+        private System.Windows.Forms.TextBox tbCodigo;
         private System.Windows.Forms.Label lblNombres;
         private System.Windows.Forms.Label lblCondicion;
         private System.Windows.Forms.Label lblCarrera;
         private System.Windows.Forms.Label lblAM;
         private System.Windows.Forms.Label lblAP;
         private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbCondicion;
+        public System.Windows.Forms.DataGridView dgvEstudiante;
+        private System.Windows.Forms.Button btnFiltrarEst;
     }
 }

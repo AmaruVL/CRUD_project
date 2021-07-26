@@ -92,3 +92,5 @@ E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormul
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmMenu.resources
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmFiltroDocentes.resources
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmFiltroEstudiante.resources
