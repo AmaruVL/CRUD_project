@@ -89,6 +89,11 @@
             this.LblTitulo.Size = new System.Drawing.Size(879, 49);
             this.LblTitulo.Text = "INFORMACIÓN DOCENTE";
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(0, 418);
+            this.panel3.Size = new System.Drawing.Size(879, 44);
+            // 
             // BtnEliminar
             // 
             this.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -270,6 +275,7 @@
             this.DgvDocente.AllowUserToAddRows = false;
             this.DgvDocente.AllowUserToDeleteRows = false;
             this.DgvDocente.AllowUserToResizeRows = false;
+            this.DgvDocente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

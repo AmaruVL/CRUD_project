@@ -148,7 +148,7 @@
             // 
             // TxtUser
             // 
-            this.TxtUser.BackColor = System.Drawing.Color.Black;
+            this.TxtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtUser.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUser.ForeColor = System.Drawing.Color.DimGray;
@@ -162,7 +162,7 @@
             // 
             // TxtPasword
             // 
-            this.TxtPasword.BackColor = System.Drawing.Color.Black;
+            this.TxtPasword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.TxtPasword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtPasword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPasword.ForeColor = System.Drawing.Color.DimGray;
@@ -184,7 +184,7 @@
             this.BtnLogin.ForeColor = System.Drawing.Color.LightGray;
             this.BtnLogin.Location = new System.Drawing.Point(47, 391);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(225, 24);
+            this.BtnLogin.Size = new System.Drawing.Size(225, 31);
             this.BtnLogin.TabIndex = 11;
             this.BtnLogin.Text = "ACCEDER";
             this.BtnLogin.UseVisualStyleBackColor = false;
@@ -491,7 +491,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(319, 522);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnLogin);

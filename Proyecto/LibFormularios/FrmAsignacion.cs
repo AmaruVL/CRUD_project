@@ -85,5 +85,14 @@ namespace LibFormularios
             }
             
         }
+
+        private void btnVerTutores_Click(object sender, EventArgs e)
+        {
+            FrmTutores ListaTutores = new FrmTutores();
+           
+            ListaTutores.Show();
+            
+
+        }
     }
 }

@@ -42,5 +42,15 @@ namespace LibFormularios
         {
             abrirFormularioHijo(new FrmDocente());
         }
+
+        private void btnEstudiante_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FrmEstudiante());
+        }
+
+        private void btnTutor_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FrmAsignacion());
+        }
     }
 }
