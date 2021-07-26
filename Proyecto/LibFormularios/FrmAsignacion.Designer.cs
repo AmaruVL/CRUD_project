@@ -35,25 +35,27 @@ namespace LibFormularios
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.dgvTutorias = new System.Windows.Forms.DataGridView();
-            this.btnPasar2 = new System.Windows.Forms.Button();
             this.CodEstudiante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ApellidoPaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ApellidoMaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CarreraProfesional = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Condicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPasar2 = new System.Windows.Forms.Button();
             this.lb_Semestre = new System.Windows.Forms.Label();
             this.txt_Semestre = new System.Windows.Forms.TextBox();
             this.txt_Fecha = new System.Windows.Forms.TextBox();
             this.lb_Fecha = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnVerTutores = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTutorias)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvEstudiantes
             // 
+            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstudiantes.Location = new System.Drawing.Point(26, 84);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
@@ -104,18 +106,10 @@ namespace LibFormularios
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.BtnConfirmar_Click);
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(657, 453);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // dgvTutorias
             // 
             this.dgvTutorias.AllowUserToAddRows = false;
+            this.dgvTutorias.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvTutorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTutorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CodEstudiante,
@@ -128,16 +122,6 @@ namespace LibFormularios
             this.dgvTutorias.Name = "dgvTutorias";
             this.dgvTutorias.Size = new System.Drawing.Size(359, 344);
             this.dgvTutorias.TabIndex = 0;
-            // 
-            // btnPasar2
-            // 
-            this.btnPasar2.Location = new System.Drawing.Point(407, 238);
-            this.btnPasar2.Name = "btnPasar2";
-            this.btnPasar2.Size = new System.Drawing.Size(58, 23);
-            this.btnPasar2.TabIndex = 3;
-            this.btnPasar2.Text = "-->";
-            this.btnPasar2.UseVisualStyleBackColor = true;
-            this.btnPasar2.Click += new System.EventHandler(this.BtnPasar2_Click_1);
             // 
             // CodEstudiante
             // 
@@ -169,6 +153,16 @@ namespace LibFormularios
             this.Condicion.HeaderText = "Condicion";
             this.Condicion.Name = "Condicion";
             // 
+            // btnPasar2
+            // 
+            this.btnPasar2.Location = new System.Drawing.Point(407, 238);
+            this.btnPasar2.Name = "btnPasar2";
+            this.btnPasar2.Size = new System.Drawing.Size(58, 23);
+            this.btnPasar2.TabIndex = 3;
+            this.btnPasar2.Text = "-->";
+            this.btnPasar2.UseVisualStyleBackColor = true;
+            this.btnPasar2.Click += new System.EventHandler(this.BtnPasar2_Click_1);
+            // 
             // lb_Semestre
             // 
             this.lb_Semestre.AutoSize = true;
@@ -197,15 +191,37 @@ namespace LibFormularios
             this.lb_Fecha.AutoSize = true;
             this.lb_Fecha.Location = new System.Drawing.Point(607, 21);
             this.lb_Fecha.Name = "lb_Fecha";
-            this.lb_Fecha.Size = new System.Drawing.Size(65, 13);
+            this.lb_Fecha.Size = new System.Drawing.Size(37, 13);
             this.lb_Fecha.TabIndex = 7;
-            this.lb_Fecha.Text = "Fecha ( / / )";
+            this.lb_Fecha.Text = "Fecha";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(657, 453);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnVerTutores
+            // 
+            this.btnVerTutores.Location = new System.Drawing.Point(37, 453);
+            this.btnVerTutores.Name = "btnVerTutores";
+            this.btnVerTutores.Size = new System.Drawing.Size(121, 23);
+            this.btnVerTutores.TabIndex = 8;
+            this.btnVerTutores.Text = "Ver lista de tutores";
+            this.btnVerTutores.UseVisualStyleBackColor = true;
+            this.btnVerTutores.Click += new System.EventHandler(this.btnVerTutores_Click);
             // 
             // FrmAsignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(883, 504);
+            this.Controls.Add(this.btnVerTutores);
             this.Controls.Add(this.lb_Fecha);
             this.Controls.Add(this.txt_Fecha);
             this.Controls.Add(this.txt_Semestre);
@@ -237,7 +253,6 @@ namespace LibFormularios
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DataGridView dgvTutorias;
         private System.Windows.Forms.Button btnPasar2;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodEstudiante;
@@ -250,6 +265,8 @@ namespace LibFormularios
         private System.Windows.Forms.TextBox txt_Semestre;
         private System.Windows.Forms.TextBox txt_Fecha;
         private System.Windows.Forms.Label lb_Fecha;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnVerTutores;
     }
 }
 
