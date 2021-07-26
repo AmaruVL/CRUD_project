@@ -167,7 +167,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button BtnLimpiar;
@@ -176,5 +175,6 @@
         protected System.Windows.Forms.Panel panel1;
         protected System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.Button BtnEditar;
+        protected System.Windows.Forms.Panel panel3;
     }
 }

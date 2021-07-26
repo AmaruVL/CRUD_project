@@ -170,16 +170,16 @@
     <Compile Include="FrmEscuelaProfesional.Designer.cs">
       <DependentUpon>FrmEscuelaProfesional.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFiltroDocentes.cs">
+    <Compile Include="FrmFiltros\FrmFiltroDocentes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFiltroDocentes.Designer.cs">
+    <Compile Include="FrmFiltros\FrmFiltroDocentes.Designer.cs">
       <DependentUpon>FrmFiltroDocentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFiltroEstudiante.cs">
+    <Compile Include="FrmFiltros\FrmFiltroEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFiltroEstudiante.Designer.cs">
+    <Compile Include="FrmFiltros\FrmFiltroEstudiante.Designer.cs">
       <DependentUpon>FrmFiltroEstudiante.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPadre.cs">
@@ -220,10 +220,10 @@
     <EmbeddedResource Include="FrmEstudiante.resx">
       <DependentUpon>FrmEstudiante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFiltroDocentes.resx">
+    <EmbeddedResource Include="FrmFiltros\FrmFiltroDocentes.resx">
       <DependentUpon>FrmFiltroDocentes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFiltroEstudiante.resx">
+    <EmbeddedResource Include="FrmFiltros\FrmFiltroEstudiante.resx">
       <DependentUpon>FrmFiltroEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPadre.resx">
@@ -241,11 +241,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="imagenes\icons8-estudiantes-64.png" />
-    <Content Include="imagenes\icons8-formación-50.png" />
-    <Content Include="imagenes\icons8-tutor-50.png" />
-    <Content Include="imagenes\teacher.png" />
-    <Content Include="imagenes\tutor.png" />
+    <Content Include="Imagenes\icons8-estudiantes-64.png" />
+    <Content Include="Imagenes\icons8-formación-50.png" />
+    <Content Include="Imagenes\icons8-tutor-50.png" />
+    <Content Include="Imagenes\teacher.png" />
+    <Content Include="Imagenes\tutor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

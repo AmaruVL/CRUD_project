@@ -18,7 +18,8 @@ go
 create table Docente
 (	-- lista de atributos
 	--CodDocente   TCod_Docente,
-	CodDocente int identity(10000,1) not null,
+	--CodDocente int identity(10000,1) not null,
+	CodDocente  varchar(5)    not null,
     Nombres     varchar(20)  not null,
 	ApellidoPaterno     varchar(25)  not null,
     ApellidoMaterno     varchar(25)  not null,
@@ -52,7 +53,8 @@ go
 --------------------------------------------------------------------------
 create table Tutor(
 	--CodDocente varchar(6) not null,
-	CodDocente int identity(10000,1) not null,
+	--CodDocente int identity(10000,1) not null,
+	CodDocente  varchar(5)    not null,
     Nombres     varchar(20)  not null,
 	ApellidoPaterno     varchar(25)  not null,
     ApellidoMaterno     varchar(25)  not null,
@@ -75,7 +77,7 @@ CREATE TABLE Tutoria
 	IDTutoria int identity(1000,1) not null,
 	--IDTutoria varchar(6) not null,
 	-- IDTutoria int IDENTITY(1,1),  
-	CodDocente int,
+	CodDocente varchar(5) ,
 	CodEstudiante varchar(6),
 	Semestre VARCHAR(10) NOT NULL,
 	Fecha date,
@@ -85,3 +87,15 @@ CREATE TABLE Tutoria
   FOREIGN KEY (CodEstudiante) REFERENCES Estudiante(CodEstudiante),
 );
 GO
+
+--------------------------------------------------------------------------
+--- CREACION DE LA TABLA USUARIO
+--------------------------------------------------------------------------
+create table Usuario
+( --lista de atributos  
+  --CodDocente   int unique not null,
+  CodDocente varchar(5)  not null,
+  Hash     nvarchar(40) not null,
+  primary key(CodDocente)
+)
+go

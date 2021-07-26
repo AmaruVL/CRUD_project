@@ -25,14 +25,22 @@ namespace LibFormularios
                 Docente.DgvDocente.DataSource = null;
                 Docente.DgvDocente.Rows.Clear();
             }
-            string NombreTabla = "Docente";
-            string NombreID = "CodDocente";
-           // Docente.DgvDocente.DataSource = Docente.Filtrar();
+            string[] ValoresAtr = { tbCodigo.Text, tbNombre.Text, tbAP.Text, tbAM.Text, tbClase.Text, tbCategoria.Text, tbRegimen.Text, tbCarrera.Text };
+            Docente.DgvDocente.DataSource = Docente.aEntidad.Filtrar(ValoresAtr);
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-
+            FrmDocente Docente = Owner as FrmDocente;
+            Docente.ListarRegistros();
+            tbCodigo.Text = ""; 
+            tbNombre.Text = ""; 
+            tbAP.Text = ""; 
+            tbAM.Text = ""; 
+            tbClase.Text = ""; 
+            tbCategoria.Text = ""; 
+            tbRegimen.Text = ""; 
+            tbCarrera.Text = "";
         }
     }
 }

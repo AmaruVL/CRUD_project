@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.tbAM = new System.Windows.Forms.TextBox();
             this.tbAP = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
-            this.DgvDocente = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,6 +49,10 @@
             this.tbClase = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbCarrera = new System.Windows.Forms.TextBox();
+            this.tbCodigo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DgvDocente = new System.Windows.Forms.DataGridView();
+            this.btnFiltrarEst = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDocente)).BeginInit();
@@ -56,6 +60,10 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnFiltrarEst);
+            this.panel2.Controls.Add(this.DgvDocente);
+            this.panel2.Controls.Add(this.tbCodigo);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.tbCarrera);
             this.panel2.Controls.Add(this.tbRegimen);
             this.panel2.Controls.Add(this.tbClase);
@@ -64,7 +72,6 @@
             this.panel2.Controls.Add(this.tbAP);
             this.panel2.Controls.Add(this.tbNombre);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.DgvDocente);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label10);
@@ -132,43 +139,137 @@
             // 
             // tbRegimen
             // 
-            this.tbRegimen.Location = new System.Drawing.Point(89, 162);
+            this.tbRegimen.Location = new System.Drawing.Point(88, 169);
             this.tbRegimen.Name = "tbRegimen";
             this.tbRegimen.Size = new System.Drawing.Size(100, 20);
             this.tbRegimen.TabIndex = 73;
             // 
             // tbCategoria
             // 
-            this.tbCategoria.Location = new System.Drawing.Point(90, 136);
+            this.tbCategoria.Location = new System.Drawing.Point(89, 143);
             this.tbCategoria.Name = "tbCategoria";
             this.tbCategoria.Size = new System.Drawing.Size(100, 20);
             this.tbCategoria.TabIndex = 72;
             // 
             // tbAM
             // 
-            this.tbAM.Location = new System.Drawing.Point(89, 78);
+            this.tbAM.Location = new System.Drawing.Point(88, 85);
             this.tbAM.Name = "tbAM";
             this.tbAM.Size = new System.Drawing.Size(140, 20);
             this.tbAM.TabIndex = 67;
             // 
             // tbAP
             // 
-            this.tbAP.Location = new System.Drawing.Point(89, 52);
+            this.tbAP.Location = new System.Drawing.Point(88, 59);
             this.tbAP.Name = "tbAP";
             this.tbAP.Size = new System.Drawing.Size(140, 20);
             this.tbAP.TabIndex = 66;
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(89, 30);
+            this.tbNombre.Location = new System.Drawing.Point(88, 37);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(140, 20);
             this.tbNombre.TabIndex = 65;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(27, 172);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 13);
+            this.label11.TabIndex = 61;
+            this.label11.Text = "Regimen :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(24, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 13);
+            this.label10.TabIndex = 60;
+            this.label10.Text = "Categoria :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 88);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "A. Materno :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "A. Paterno :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "Nombres :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "Clase:";
+            // 
+            // tbClase
+            // 
+            this.tbClase.Location = new System.Drawing.Point(88, 117);
+            this.tbClase.Name = "tbClase";
+            this.tbClase.Size = new System.Drawing.Size(100, 20);
+            this.tbClase.TabIndex = 72;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(28, 198);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.TabIndex = 61;
+            this.label6.Text = "Carrera :";
+            // 
+            // tbCarrera
+            // 
+            this.tbCarrera.Location = new System.Drawing.Point(89, 195);
+            this.tbCarrera.Name = "tbCarrera";
+            this.tbCarrera.Size = new System.Drawing.Size(100, 20);
+            this.tbCarrera.TabIndex = 73;
+            // 
+            // tbCodigo
+            // 
+            this.tbCodigo.Location = new System.Drawing.Point(89, 13);
+            this.tbCodigo.Name = "tbCodigo";
+            this.tbCodigo.Size = new System.Drawing.Size(140, 20);
+            this.tbCodigo.TabIndex = 75;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 74;
+            this.label2.Text = "Codigo :";
             // 
             // DgvDocente
             // 
             this.DgvDocente.AllowUserToAddRows = false;
             this.DgvDocente.AllowUserToDeleteRows = false;
+            this.DgvDocente.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,98 +279,37 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvDocente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvDocente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvDocente.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvDocente.Location = new System.Drawing.Point(268, 15);
+            this.DgvDocente.Location = new System.Drawing.Point(268, 16);
             this.DgvDocente.MultiSelect = false;
             this.DgvDocente.Name = "DgvDocente";
             this.DgvDocente.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvDocente.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvDocente.RowHeadersWidth = 25;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DgvDocente.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DgvDocente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvDocente.Size = new System.Drawing.Size(575, 335);
-            this.DgvDocente.TabIndex = 63;
+            this.DgvDocente.Size = new System.Drawing.Size(543, 324);
+            this.DgvDocente.TabIndex = 76;
             // 
-            // label11
+            // btnFiltrarEst
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(28, 165);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 13);
-            this.label11.TabIndex = 61;
-            this.label11.Text = "Regimen :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(25, 143);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 13);
-            this.label10.TabIndex = 60;
-            this.label10.Text = "Categoria :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 81);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
-            this.label5.TabIndex = 55;
-            this.label5.Text = "A. Materno :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 55);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 54;
-            this.label4.Text = "A. Paterno :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 53;
-            this.label3.Text = "Nombres :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "Clase:";
-            // 
-            // tbClase
-            // 
-            this.tbClase.Location = new System.Drawing.Point(89, 110);
-            this.tbClase.Name = "tbClase";
-            this.tbClase.Size = new System.Drawing.Size(100, 20);
-            this.tbClase.TabIndex = 72;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 191);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
-            this.label6.TabIndex = 61;
-            this.label6.Text = "Carrera :";
-            // 
-            // tbCarrera
-            // 
-            this.tbCarrera.Location = new System.Drawing.Point(90, 188);
-            this.tbCarrera.Name = "tbCarrera";
-            this.tbCarrera.Size = new System.Drawing.Size(100, 20);
-            this.tbCarrera.TabIndex = 73;
+            this.btnFiltrarEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnFiltrarEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarEst.ForeColor = System.Drawing.Color.White;
+            this.btnFiltrarEst.Location = new System.Drawing.Point(70, 312);
+            this.btnFiltrarEst.Name = "btnFiltrarEst";
+            this.btnFiltrarEst.Size = new System.Drawing.Size(105, 28);
+            this.btnFiltrarEst.TabIndex = 77;
+            this.btnFiltrarEst.Text = "Filtrar";
+            this.btnFiltrarEst.UseVisualStyleBackColor = false;
+            this.btnFiltrarEst.Click += new System.EventHandler(this.btnFiltrarEst_Click);
             // 
             // FrmDocente
             // 
@@ -307,6 +347,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbCarrera;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbCodigo;
+        private System.Windows.Forms.Label label2;
         public System.Windows.Forms.DataGridView DgvDocente;
+        private System.Windows.Forms.Button btnFiltrarEst;
     }
 }

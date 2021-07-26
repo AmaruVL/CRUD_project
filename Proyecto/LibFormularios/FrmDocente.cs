@@ -7,7 +7,6 @@ namespace LibFormularios
 {
     public partial class FrmDocente : FrmPadre
     {
-        private string CodDocente = "";
         private bool EditActivado = false;
         public FrmDocente()
         {
@@ -20,10 +19,9 @@ namespace LibFormularios
         //--EStablecer los valores que iran a la tabla
         public override string[] AsignarValoresAtributos()
         {
-            return new string[] {tbNombre.Text,tbAP.Text,tbAM.Text,tbClase.Text
+            return new string[] {tbCodigo.Text,tbNombre.Text,tbAP.Text,tbAM.Text,tbClase.Text
             ,tbCategoria.Text,tbRegimen.Text,tbCarrera.Text};
         }
-        //----------------------------------------------------------------------------------------------
         //-- Mostrar los datos de un registro
         public override void MostrarDatos()
         {   //-- muestra la informacion contenida en el dataset de cDocente
@@ -33,11 +31,10 @@ namespace LibFormularios
             tbCategoria.Text = aEntidad.ValorAtributo("Categoria");
             tbRegimen.Text = aEntidad.ValorAtributo("Regimen");
         }
-        //----------------------------------------------------------------------------------------------
         //-- Iniciar los atributos clave y no clave en blanco
         public override void InicializarAtributoClave()
         {
-            //tbCodigo.Text = "";
+            tbCodigo.Text = "";
         }
         public override void InicializarAtributosNoClave()
         {
@@ -49,13 +46,11 @@ namespace LibFormularios
             tbRegimen.Text = "";
             tbCarrera.Text = "";
         }
-        //----------------------------------------------------------------------------------------------
         //-- Listar los registros y mostrrlos en el datagrid
         public override void ListarRegistros()
         {   //-- Mostrar todos los docentes de la tabla en el grid
             DgvDocente.DataSource = aEntidad.ListaGeneral();
         }
-        //----------------------------------------------------------------------------------------------
         //-- verificar los campos obligatorios(codigo y nombre) esten llenos
         public override bool EsRegistroValido()
         {
@@ -91,6 +86,7 @@ namespace LibFormularios
                     {
                         aEntidad.Actualizar(Atributos);
                         EditActivado = false; //Reestablecer a falso
+                        tbCodigo.ReadOnly = false;
                     }
                     else //Entonces insertar
                     {
@@ -115,7 +111,7 @@ namespace LibFormularios
             {
                 if (DgvDocente.SelectedRows.Count > 0)
                 {
-                    CodDocente = DgvDocente.CurrentRow.Cells[0].Value.ToString();
+                    tbCodigo.Text = DgvDocente.CurrentRow.Cells[0].Value.ToString();
                     tbNombre.Text = DgvDocente.CurrentRow.Cells[1].Value.ToString();
                     tbAP.Text = DgvDocente.CurrentRow.Cells[2].Value.ToString();
                     tbAM.Text = DgvDocente.CurrentRow.Cells[3].Value.ToString();
@@ -124,6 +120,7 @@ namespace LibFormularios
                     tbRegimen.Text = DgvDocente.CurrentRow.Cells[6].Value.ToString();
                     tbCarrera.Text = DgvDocente.CurrentRow.Cells[7].Value.ToString();
                     EditActivado = true;
+                    tbCodigo.ReadOnly = true;
                 }
                 else
                 {
@@ -141,7 +138,8 @@ namespace LibFormularios
             {
                 if (DgvDocente.SelectedRows.Count > 0)
                 {
-                    string Nombre, AP, AM, Clase, Categoria, Regimen, Carrera;
+                    string Codigo, Nombre, AP, AM, Clase, Categoria, Regimen, Carrera;
+                    Codigo = DgvDocente.CurrentRow.Cells[0].Value.ToString();                 
                     Nombre = DgvDocente.CurrentRow.Cells[1].Value.ToString();
                     AP = DgvDocente.CurrentRow.Cells[2].Value.ToString();
                     AM = DgvDocente.CurrentRow.Cells[3].Value.ToString();
@@ -151,13 +149,12 @@ namespace LibFormularios
                     Carrera = DgvDocente.CurrentRow.Cells[7].Value.ToString();
 
                     //--Recuperar atributos, el primer atributo es la clave
-                    string[] Atributos = { Nombre , AP , AM , Clase , Categoria , Regimen, Carrera };
+                    string[] Atributos = { Codigo, Nombre , AP , AM , Clase , Categoria , Regimen, Carrera };
                     //-- Verificar si existe clave primaria
                     aEntidad.Eliminar(Atributos);
                     MessageBox.Show("ELIMINADO EXITOSAMENTE", "CONFIRMACION");
                     InicializarAtributos();
                     ListarRegistros();
-
                 }
                 else
                 {
@@ -168,10 +165,16 @@ namespace LibFormularios
             {
                 MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
             }
-
         }
 
         #endregion
 
+        private void btnFiltrarEst_Click(object sender, EventArgs e)
+        {
+            FrmFiltroDocentes Filtro = new FrmFiltroDocentes();
+            AddOwnedForm(Filtro);
+            Filtro.Show();
+
+        }
     }
 }

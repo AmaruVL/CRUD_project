@@ -19,7 +19,7 @@ namespace CORRECCION
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new Logeo());
-            Application.Run(new FrmEstudiante());
+            Application.Run(new FrmDocente());
             //Application.Run(new FrmMenu());
 
 
