@@ -161,7 +161,6 @@ namespace LibFormularios
             {
                 MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
             }
-
         }
 
         #endregion

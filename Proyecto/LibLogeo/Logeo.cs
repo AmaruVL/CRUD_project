@@ -68,6 +68,7 @@ namespace LibLogeo
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+
             FrmMenu Menu = new FrmMenu();
             Menu.Show();
             //Hide();

@@ -72,3 +72,6 @@ insert into Docente values('10034','Yeshica Isela','Ormeño','Ayala','Nombrado','
 --INSERCION USUARIO
 --pass: 1234
 insert into Usuario values('10000','81dc9bdb52d04dc20036dbd8313ed055');
+
+
+select * from tutoria

@@ -287,7 +287,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvDocente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvDocente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvDocente.Location = new System.Drawing.Point(268, 16);
+            this.DgvDocente.Location = new System.Drawing.Point(285, 16);
             this.DgvDocente.MultiSelect = false;
             this.DgvDocente.Name = "DgvDocente";
             this.DgvDocente.ReadOnly = true;
