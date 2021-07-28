@@ -103,6 +103,7 @@ namespace LibFormularios
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lb_Semestre);
             this.Controls.Add(this.dgvTutores);
+            this.MaximumSize = new System.Drawing.Size(883, 606);
             this.Name = "FrmTutores";
             this.Text = "FrmTutores";
             this.Load += new System.EventHandler(this.FrmTutores_Load);

@@ -177,3 +177,8 @@ C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibFormularios\ob
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.csproj.CopyComplete
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.dll
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.pdb
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.frmTutoría.resources
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.FrmTutorias.FrmFichaTutoria.resources
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.frmListaTutorias.resources
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.StdInfo.resources
+E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibFormularios\obj\Debug\LibFormularios.TutoInfo.resources

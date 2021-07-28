@@ -19,7 +19,6 @@ namespace CORRECCION
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Logeo());
-            //Application.Run(new FrmEstudiante());
 
         }
     }

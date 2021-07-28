@@ -31,6 +31,7 @@ namespace LibFormularios
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.btnTutorias = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDocente = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEstudiante = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -49,6 +50,7 @@ namespace LibFormularios
             // panelMenuLateral
             // 
             this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.panelMenuLateral.Controls.Add(this.btnTutorias);
             this.panelMenuLateral.Controls.Add(this.btnTutor);
             this.panelMenuLateral.Controls.Add(this.btnDocente);
             this.panelMenuLateral.Controls.Add(this.btnEstudiante);
@@ -57,14 +59,53 @@ namespace LibFormularios
             this.panelMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.panelMenuLateral.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenuLateral.Name = "panelMenuLateral";
-            this.panelMenuLateral.Size = new System.Drawing.Size(202, 594);
+            this.panelMenuLateral.Size = new System.Drawing.Size(202, 606);
             this.panelMenuLateral.TabIndex = 0;
+            // 
+            // btnTutorias
+            // 
+            this.btnTutorias.Active = false;
+            this.btnTutorias.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnTutorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnTutorias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTutorias.BorderRadius = 7;
+            this.btnTutorias.ButtonText = "TUTORIAS";
+            this.btnTutorias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTutorias.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTutorias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTutorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTutorias.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTutorias.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTutorias.Iconimage")));
+            this.btnTutorias.Iconimage_right = null;
+            this.btnTutorias.Iconimage_right_Selected = null;
+            this.btnTutorias.Iconimage_Selected = null;
+            this.btnTutorias.IconMarginLeft = 0;
+            this.btnTutorias.IconMarginRight = 0;
+            this.btnTutorias.IconRightVisible = true;
+            this.btnTutorias.IconRightZoom = 0D;
+            this.btnTutorias.IconVisible = true;
+            this.btnTutorias.IconZoom = 90D;
+            this.btnTutorias.IsTab = false;
+            this.btnTutorias.Location = new System.Drawing.Point(0, 441);
+            this.btnTutorias.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTutorias.Name = "btnTutorias";
+            this.btnTutorias.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnTutorias.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnTutorias.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnTutorias.selected = false;
+            this.btnTutorias.Size = new System.Drawing.Size(202, 71);
+            this.btnTutorias.TabIndex = 4;
+            this.btnTutorias.Text = "TUTORIAS";
+            this.btnTutorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTutorias.Textcolor = System.Drawing.Color.White;
+            this.btnTutorias.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTutorias.Click += new System.EventHandler(this.btnTutorias_Click);
             // 
             // btnTutor
             // 
             this.btnTutor.Active = false;
             this.btnTutor.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(166)))), ((int)(((byte)(79)))));
+            this.btnTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnTutor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTutor.BorderRadius = 7;
             this.btnTutor.ButtonText = "TUTOR";
@@ -103,7 +144,7 @@ namespace LibFormularios
             // 
             this.btnDocente.Active = false;
             this.btnDocente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(166)))), ((int)(((byte)(79)))));
+            this.btnDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnDocente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDocente.BorderRadius = 7;
             this.btnDocente.ButtonText = "DOCENTE";
@@ -142,7 +183,7 @@ namespace LibFormularios
             // 
             this.btnEstudiante.Active = false;
             this.btnEstudiante.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(166)))), ((int)(((byte)(79)))));
+            this.btnEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnEstudiante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEstudiante.BorderRadius = 7;
             this.btnEstudiante.ButtonText = "ESTUDIANTE";
@@ -216,14 +257,14 @@ namespace LibFormularios
             this.panelFormHijo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormHijo.Location = new System.Drawing.Point(202, 0);
             this.panelFormHijo.Name = "panelFormHijo";
-            this.panelFormHijo.Size = new System.Drawing.Size(1116, 594);
+            this.panelFormHijo.Size = new System.Drawing.Size(883, 606);
             this.panelFormHijo.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(352, 160);
+            this.pictureBox1.Location = new System.Drawing.Point(235, 166);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(402, 267);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,13 +276,14 @@ namespace LibFormularios
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1318, 594);
+            this.ClientSize = new System.Drawing.Size(1085, 606);
             this.Controls.Add(this.panelFormHijo);
             this.Controls.Add(this.panelMenuLateral);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMenu";
             this.Text = "Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Menu_Load);
             this.panelMenuLateral.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
@@ -264,5 +306,6 @@ namespace LibFormularios
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnTutorias;
     }
 }

@@ -71,7 +71,6 @@ namespace LibLogeo
 
             FrmMenu Menu = new FrmMenu();
             Menu.Show();
-            //Hide();
         }
 
         public static string CifradoMD5(string Contraseña) //Método de clase

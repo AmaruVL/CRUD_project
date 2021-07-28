@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LibClases;
+using System.Security.Cryptography;
 
 namespace LibFormularios
 {

@@ -46,6 +46,7 @@
     <Compile Include="cEntidad.cs" />
     <Compile Include="cEscuelaProfesional.cs" />
     <Compile Include="cEstudiante.cs" />
+    <Compile Include="cFichaTutoria.cs" />
     <Compile Include="cTutoria.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

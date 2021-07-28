@@ -19,9 +19,8 @@ namespace LibFormularios
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
         }
-        private Form activoFrm = null;
+        private Form activoFrm;
         private void abrirFormularioHijo(Form hijo)
         {
             if(activoFrm!=null)
@@ -51,6 +50,11 @@ namespace LibFormularios
         private void btnTutor_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new FrmAsignacion());
+        }
+
+        private void btnTutorias_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmListaTutorias());
         }
     }
 }
