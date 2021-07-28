@@ -162,7 +162,6 @@ namespace LibFormularios
                 MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
             }
         }
-
         #endregion
 
         private void btnFiltrarEst_Click(object sender, EventArgs e)

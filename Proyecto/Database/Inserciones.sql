@@ -73,5 +73,21 @@ insert into Docente values('10034','Yeshica Isela','Ormeño','Ayala','Nombrado','
 --pass: 1234
 insert into Usuario values('10000','81dc9bdb52d04dc20036dbd8313ed055');
 
+--INSERCION FICHA TUTORIA
+insert into FichaTutoria values('10003','182456','2020-I','2021-05-24','El estudiente cuenta con bajo rendimiento debido a problemas familiares.')
+insert into FichaTutoria values('10003','145678','2020-I','2021-05-12','El estudiente cuenta con bajo rendimiento debido a problemas familiares.')
+insert into FichaTutoria values('10004','134521','2020-I','2021-05-18','El estudiente cuenta con bajo rendimiento debido a factores emocionales.')
+insert into FichaTutoria values('10005','176542','2020-I','2021-06-14','El estudiente cuenta con bajo rendimiento debido a factores emocionales.')
+insert into FichaTutoria values('10006','189023','2020-I','2021-05-04','El estudiente cuenta con bajo rendimiento debido a factores emocionales.')
+insert into FichaTutoria values('10007','196541','2020-I','2021-06-15','El estudiente cuenta con bajo rendimiento debido a que no cuenta con buena conexion.')
+insert into FichaTutoria values('10008','187691','2020-I','2021-06-30','El estudiente cuenta con bajo rendimiento debido a que no cuenta con buena conexion.')
+insert into FichaTutoria values('10009','184567','2020-I','2021-06-24','El estudiente cuenta con bajo rendimiento debido a que no se encuentra en las condiciones necesarias.')
+insert into FichaTutoria values('10009','174512','2020-I','2021-06-24','El estudiente cuenta con bajo rendimiento debido a que no se encuentra en las condiciones necesarias.')
+insert into FichaTutoria values('10006','167734','2020-I','2021-06-02','El estudiente cuenta con bajo rendimiento debido a que no se encuentra en las condiciones necesarias.')
+insert into FichaTutoria values('10013','202879','2020-I','2021-05-05','El estudiente cuenta con bajo rendimiento debido a la falta de motivación.')
+insert into FichaTutoria values('10014','202478','2020-I','2021-05-24','El estudiente cuenta con bajo rendimiento debido a la falta de motivación.')
+insert into FichaTutoria values('10015','183456','2020-I','2021-05-20','El estudiente cuenta con bajo rendimiento debido a la falta de motivación.')
+insert into FichaTutoria values('10016','161657','2020-I','2021-06-24','El estudiente cuenta con bajo rendimiento debido a problemas familiares.')
+insert into FichaTutoria values('10017','144545','2020-I','2021-06-24','El estudiente cuenta con bajo rendimiento debido a problemas familiares.')
+									
 
-select * from tutoria

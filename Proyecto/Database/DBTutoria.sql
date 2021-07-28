@@ -99,3 +99,21 @@ create table Usuario
   primary key(CodDocente)
 )
 go
+
+--------------------------------------------------------------------------
+--- CREACION DE LA TABLA FICHA TUTORIA
+--------------------------------------------------------------------------
+create table FichaTutoria(
+	-- Lista de atributos
+	IDTutoria int identity(1000,1) not null, 
+	CodDocente varchar(5) ,
+	CodEstudiante varchar(6),
+	Semestre VARCHAR(10) NOT NULL,
+	Fecha date,
+	Descripcion nvarchar(500),
+	-- Determinar las claves 
+	PRIMARY KEY (IDTutoria),
+	FOREIGN KEY (CodDocente) REFERENCES Docente(CodDocente),
+  FOREIGN KEY (CodEstudiante) REFERENCES Estudiante(CodEstudiante),
+)
+go
