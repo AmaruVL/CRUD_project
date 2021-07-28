@@ -50,3 +50,22 @@ C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debu
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.CopyComplete
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.dll
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\LibLogeo.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\LibLogeo.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\LibClases.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\LibFormularios.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\LibClases.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\LibFormularios.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.Logeo.resources
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\LibLogeo\obj\Debug\LibLogeo.pdb
