@@ -82,27 +82,39 @@ namespace LibFormularios
                 {   //--Recuperar atributos, el primer atributo es la clave
                     string[] Atributos = AsignarValoresAtributos();
 
-                    if (EditActivado) //Si se presionó el boton editar, entonces actualizar
+                    if (EditActivado) //Si se presionó el boton editar
                     {
-                        aEntidad.Actualizar(Atributos);
-                        EditActivado = false; //Reestablecer a falso
-                        tbCodigo.ReadOnly = false;
+                        DialogResult dialogoEditar = MessageBox.Show("La nueva informacion del estudiante se actualizara\n¿Desea Continuar?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        if (dialogoEditar == DialogResult.OK)//Entonces actualizar
+                        {
+                            aEntidad.Actualizar(Atributos);
+                            EditActivado = false; //Reestablecer a falso
+                            tbCodigo.ReadOnly = false;
+                            MessageBox.Show("SE ACTUALIZÓ AL ESTUDIANTE EXITOSAMENTE", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            InicializarAtributos();//Reestablecer cmpos de edicion
+                        }
                     }
-                    else //Entonces insertar
+                    else 
                     {
-                        aEntidad.Insertar(Atributos);
+                        DialogResult dialogoGuardar = MessageBox.Show("La informacion del estudiante se agregará a la base de Datos\n¿Desea Continuar? ", "Verificacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        if (dialogoGuardar == DialogResult.OK)//Entonces insertar
+                        {
+                            aEntidad.Insertar(Atributos);
+                            MessageBox.Show("SE GUARDÓ EXITOSAMENTE", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            InicializarAtributos();//Reestablecer campos de insercion
+                        }
                     }
                     //-- Inicializar el formulario
-                    MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE", "CONFIRMACION");
-                    InicializarAtributos();
+                    //MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE", "CONFIRMACION");
+                    //InicializarAtributos();
                     ListarRegistros();
                 }
                 else
-                    MessageBox.Show("DEBE COMPLETAR EL LLENADO DEL FORMULARIO", "ALERTA");
+                    MessageBox.Show("DEBE COMPLETAR EL LLENADO DEL FORMULARIO", "ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
         public override void Editar()
@@ -122,12 +134,12 @@ namespace LibFormularios
                 }
                 else
                 {
-                    MessageBox.Show("SELECCIONE UNA FILA PARA EDITAR", "ERROR");
+                    MessageBox.Show("SELECCIONE UNA FILA PARA EDITAR", "ERROR",MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
                 }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
         public override void Eliminar()
@@ -136,7 +148,7 @@ namespace LibFormularios
             {
                 if (dgvEstudiante.SelectedRows.Count > 0)
                 {
-                    string Codigo, Nombre, AP, AM, Carrera,Condicion;
+                    string Codigo, Nombre, AP, AM, Carrera, Condicion;
                     Codigo = dgvEstudiante.CurrentRow.Cells[0].Value.ToString();
                     Nombre = dgvEstudiante.CurrentRow.Cells[1].Value.ToString();
                     AP = dgvEstudiante.CurrentRow.Cells[2].Value.ToString();
@@ -146,20 +158,29 @@ namespace LibFormularios
 
                     //--Recuperar atributos, el primer atributo es la clave
                     string[] Atributos = { Codigo, Nombre, AP, AM, Carrera, Condicion };
-                    //-- Verificar si existe clave primaria
-                    aEntidad.Eliminar(Atributos);
-                    MessageBox.Show("ELIMINADO EXITOSAMENTE", "CONFIRMACION");
-                    InicializarAtributos();
-                    ListarRegistros();
+
+                    DialogResult dialogoEliminar = MessageBox.Show("Esta seguro que desea eliminar al alumno\n cuyo codigo es "+Codigo+ " ?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                    
+                    //Continuar si se acepta:
+                    if (dialogoEliminar == DialogResult.OK)
+                    {
+                        
+                        //-- Verificar si existe clave primaria
+                        aEntidad.Eliminar(Atributos);
+                        MessageBox.Show("ALUMNO ELIMINADO EXITOSAMENTE", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        InicializarAtributos();
+                        ListarRegistros();
+                    }
+                    
                 }
                 else
                 {
-                    MessageBox.Show("SELECCIONE UNA FILA PARA ELIMINAR :/", "ERROR");
+                    MessageBox.Show("SELECCIONE UNA FILA PARA ELIMINAR", "ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
