@@ -32,3 +32,21 @@ E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.Licensing.dll
 E:\Visual projects\Desarrollo de software\Unit 1\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\LibLogeo.dll
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\LibLogeo.pdb
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\LibClases.dll
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\LibFormularios.dll
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\LibClases.pdb
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\LibFormularios.pdb
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.AssemblyReference.cache
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.Logeo.resources
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.Properties.Resources.resources
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.GenerateResource.cache
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.CoreCompileInputs.cache
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.csproj.CopyComplete
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.dll
+C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\LibLogeo\obj\Debug\LibLogeo.pdb
