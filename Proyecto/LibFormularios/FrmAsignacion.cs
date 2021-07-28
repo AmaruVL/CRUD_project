@@ -55,13 +55,14 @@ namespace LibFormularios
             }
             else
             {
-                MessageBox.Show("Seleccione una fila para editar.");
+                MessageBox.Show("Seleccione una fila de estudiantes para asignar","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
         }
 
         private void BtnConfirmar_Click(object sender, EventArgs e)
         {
+
             try
             {
                 string CodEstudiante,
@@ -69,18 +70,31 @@ namespace LibFormularios
                    Semestre = txt_Semestre.Text,
                    Fecha = txt_Fecha.Text;
 
-                for (int i = 0; i < dgvTutorias.Rows.Count; i++)
+                if(txt_CodDocente.Text!="" && txt_Semestre.Text!="" && txt_Fecha.Text!="")
                 {
-                    CodEstudiante = dgvTutorias.Rows[i].Cells[0].Value.ToString();
-                    string[] atributos = { CodDocente, CodEstudiante, Semestre, Fecha };
-                    aTutoria.Insertar(atributos);
+                    DialogResult dialogoAsignar = MessageBox.Show("Se asignaran los alumnos seleccionados al Tutor\n¿Desea Continuar?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                    if (dialogoAsignar == DialogResult.OK)
+                    {
+                        for (int i = 0; i < dgvTutorias.Rows.Count; i++)
+                        {
+                            CodEstudiante = dgvTutorias.Rows[i].Cells[0].Value.ToString();
+                            string[] atributos = { CodDocente, CodEstudiante, Semestre, Fecha };
+                            aTutoria.Insertar(atributos);
+                            MessageBox.Show("Los alumnos fueron asignados con éxito", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                        }
+                    }
                 }
-                MessageBox.Show("EXITO:  SE HA AÑADIDO CORRECTAMENTE");
+                else
+                {
+                    MessageBox.Show("Debe de llenar todos los campos Superiores\n(CodDocente,Semestre y Fecha)", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+                
             }
             catch (Exception E) 
             {
-                MessageBox.Show("ERROR: " + E.ToString());
+                MessageBox.Show(E.ToString(),"ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
                
             }
             

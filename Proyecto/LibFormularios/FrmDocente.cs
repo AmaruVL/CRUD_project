@@ -84,25 +84,38 @@ namespace LibFormularios
 
                     if (EditActivado) //Si se presionó el boton editar, entonces actualizar
                     {
-                        aEntidad.Actualizar(Atributos);
-                        EditActivado = false; //Reestablecer a falso
-                        tbCodigo.ReadOnly = false;
+                        DialogResult dialogoEditar = MessageBox.Show("La nueva informacion del Docente se actualizará\n¿Desea Continuar?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        if (dialogoEditar == DialogResult.OK)
+                        {
+                            aEntidad.Actualizar(Atributos);
+                            EditActivado = false; //Reestablecer a falso
+                            tbCodigo.ReadOnly = false;
+                            MessageBox.Show("SE ACTUALIZÓ AL DOCENTE EXITOSAMENTE", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            InicializarAtributos();//Reestablecer cmpos de edicion
+                        }
+
                     }
                     else //Entonces insertar
                     {
-                        aEntidad.Insertar(Atributos);
+                        DialogResult dialogoGuardar = MessageBox.Show("La informacion del Docente se agregará a la base de Datos\n¿Desea Continuar? ", "Verificacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        if (dialogoGuardar == DialogResult.OK)//Entonces insertar
+                        {
+                            aEntidad.Insertar(Atributos);
+                            MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            InicializarAtributos();
+                        }
                     }
                     //-- Inicializar el formulario
-                    MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE", "CONFIRMACION");
-                    InicializarAtributos();
+                    //MessageBox.Show("OPERACION REALIZADA EXITOSAMENTE", "CONFIRMACION");
+                    //InicializarAtributos();
                     ListarRegistros();
                 }
                 else
-                    MessageBox.Show("DEBE COMPLETAR EL LLENADO DEL FORMULARIO", "ALERTA");
+                    MessageBox.Show("DEBE COMPLETAR EL LLENADO DEL FORMULARIO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public override void Editar()
@@ -124,12 +137,12 @@ namespace LibFormularios
                 }
                 else
                 {
-                    MessageBox.Show("SELECCIONE UNA FILA PARA EDITAR", "ERROR");
+                    MessageBox.Show("SELECCIONE UNA FILA PARA EDITAR", "ERROR", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                 }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public override void Eliminar()
@@ -150,20 +163,27 @@ namespace LibFormularios
 
                     //--Recuperar atributos, el primer atributo es la clave
                     string[] Atributos = { Codigo, Nombre , AP , AM , Clase , Categoria , Regimen, Carrera };
-                    //-- Verificar si existe clave primaria
-                    aEntidad.Eliminar(Atributos);
-                    MessageBox.Show("ELIMINADO EXITOSAMENTE", "CONFIRMACION");
-                    InicializarAtributos();
-                    ListarRegistros();
+
+                    DialogResult dialogoEliminar = MessageBox.Show("Esta seguro que desea eliminar al docente\n cuyo codigo es " + Codigo + " ?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                    //Continuar si se acepta:
+                    if (dialogoEliminar == DialogResult.OK)
+                    {
+                        //-- Verificar si existe clave primaria
+                        aEntidad.Eliminar(Atributos);
+                        MessageBox.Show("DOCENTE ELIMINADO EXITOSAMENTE", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        InicializarAtributos();
+                        ListarRegistros();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("SELECCIONE UNA FILA PARA ELIMINAR :/", "ERROR");
+                    MessageBox.Show("SELECCIONE UNA FILA PARA ELIMINAR", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION");
+                MessageBox.Show(e.ToString(), "ERROR AL REALIZAR LA OPERACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

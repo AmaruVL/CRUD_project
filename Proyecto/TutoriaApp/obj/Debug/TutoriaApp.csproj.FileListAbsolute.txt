@@ -40,3 +40,24 @@ C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\TutoriaApp\obj\De
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\TutoriaApp\obj\Debug\TutoriaApp.csproj.CopyComplete
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\TutoriaApp\obj\Debug\CORRECCION.exe
 C:\Users\Usuario-PC\Source\Repos\AmaruVL\CRUD_project\Proyecto\TutoriaApp\obj\Debug\CORRECCION.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\CORRECCION.exe.config
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\CORRECCION.exe
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\CORRECCION.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\LibClases.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\LibFormularios.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\LibLogeo.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\LibClases.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\LibFormularios.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\LibLogeo.pdb
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\obj\Debug\TutoriaApp.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\obj\Debug\CORRECCION.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\obj\Debug\TutoriaApp.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\obj\Debug\TutoriaApp.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\obj\Debug\TutoriaApp.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\obj\Debug\CORRECCION.exe
+C:\Users\Usuario\Desktop\Metodologia Proyecto\Proyecto\TutoriaApp\obj\Debug\CORRECCION.pdb
